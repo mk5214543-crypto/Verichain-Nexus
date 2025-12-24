@@ -41,18 +41,22 @@ import Contact from './Components/Navbar/Pages/Contact/Contact';
 
 function App() {
   return (
-    //  <Snowparticles />  
-    //   <Loginform></Loginform>
-    <Router>
-      <Navbar />
+    <div className="min-h-screen bg-[#020617] text-[#E5E7EB]">
+      {/* Agar particles use karna ho to yahan */}
+       
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<ProjectCard />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+      <Router>
+        <Snowparticles /> 
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<ProjectCard />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
